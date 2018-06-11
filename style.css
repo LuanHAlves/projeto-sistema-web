@@ -14,16 +14,15 @@
 }
 
 html, body {
-    height: 80%;
+    height: 100%;
     width: 100%;
 }
 
-
 .main-section {
-    margin-top: 50px;
+    margin-top: 15%;
     margin-left: 100%;
-    padding: 0;
 }
+
 
 .modal-content {
     width: 360px;
