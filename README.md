@@ -14,8 +14,7 @@ Alunos:
 
 BRIEF:
 	O Text é um serviço que conecta os seus principais 
-	aplicativos de mensagens em um único lugar.
-
+	aplicativos de mensagens em um único lugar. 
 	Você pode utilizar o Whatsapp, Slack, Messenger e 
 	Telagram em um só site.
 
