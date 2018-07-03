@@ -5,18 +5,19 @@ Universidade Federal de Viçosa - Campus Florestal
 
 CCF 321F - Projeto de Sistemas para Web
 
-Alunos: 
+Desenvolvido por: 
 
-         Adriele Dutra Souza                        1788
+		 Adriele Dutra Souza			1788
 
-         Luan Henrique Silva Alves                  2278
+		 Luan H. Silva Alves			2278
 
 
 BRIEF:
-	O Text é um serviço que conecta os seus principais 
-	aplicativos de mensagens em um único lugar. 
-	Você pode utilizar o Whatsapp, Slack, Messenger e 
-	Telagram em um só site.
+
+		O Text é um serviço que conecta os seus principais 
+		aplicativos de mensagens em um único lugar. 
+		Você pode utilizar o Whatsapp, Slack, Messenger e 
+		Telagram em um só site.
 
 
 Link para acesso: https://textmsg.herokuapp.com/
