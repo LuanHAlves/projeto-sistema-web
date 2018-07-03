@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>text Messenger</title>
+    <link rel="shortcut icon" href="{% static 'img/_logo.png' %}" width="16" height="13"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/validator.min.js' %}"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="{% static 'css/style_areaLogada.css' %}" rel="stylesheet">
+</head>
+	<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-md navbar-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="AreaLogada"><img src="{% static 'img/logotext.png' %}" width="162" height="53"></a>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="mr-sm-4"></a>
+						<button OnClick="logout()" class="btn btn-success my-2 my-sm-0" type="submit">Sair</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--- Home -->
+	<div id="home">
+		<div class="w3-sidebar w3-bar-block w3-white" style="width:80px">
+		<br> <br> <br> <br>
+		<a OnClick="whatsapp()" class="w3-bar-item w3-button" style="font-size: 30px"><img src="{% static 'img/icons/WhatsApp_icon.png' %}"></a><br><br>
+		<a OnClick="slack()" class="w3-bar-item w3-button" style="font-size: 30px"><img src="{% static 'img/icons/slack_icon.png' %}"></a><br><br>
+		<a OnClick="telegram()" class="w3-bar-item w3-button" style="font-size: 30px"><img src="{% static 'img/icons/telegram_icon.png' %}"></a><br><br>
+		<a OnClick="messenger()" class="w3-bar-item w3-button" style="font-size: 30px"><img src="{% static 'img/icons/Messenger_icon.png' %}"></a>
+		</div>          
+	</div>
+		<script>
+			function whatsapp() {
+				window.open("https://web.whatsapp.com", "_blank", 	
+				"toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=500,width=1000,height=1000");
+			}
+			function slack() {
+				window.open("https://slack.com/signin", "_blank", 	
+				"toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=500,width=1000,height=1000");
+			}
+			function telegram() {
+				window.open("https://web.telegram.org", "_blank", 	
+				"toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=500,width=1000,height=1000");
+			}
+			function messenger() {
+				window.open("https://www.messenger.com", "_blank", 	
+				"toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=500,width=1000,height=1000");
+			}
+			function logout() {
+                window.location.href = 'logout';
+            }
+		</script>
+	</body>
+</html>

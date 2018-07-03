@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>text Messenger</title>
+	<link rel="shortcut icon" href="{% static 'img/_logo.png' %}" width="16" height="13"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/validator.min.js' %}"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="{% static 'css/style_login.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="{% static 'img/logotext.png' %}" width="162" height="53"></a>
+	</div>
+</nav>
+<!--- Home -->
+<div id="home">
+    <div class="modal-dialog text-center">
+        <div class="col-sm-10 main-section"> 
+            <div class="modal-content">
+                <div class="col-sm-15">
+                    <h4>O Text é um serviço que conecta os seus principais aplicativos de mensagens em um único lugar.</h4> 
+                    <h4>Você pode utilizar o Whatsapp, Slack, Messenger, e Telagram em um só site.</h4><br>
+                    <img src="{% static 'img/_logo.png' %}" width="22%" />
+                    <a> = </a>
+                    <img src="{% static 'img/WhatsApp_icon.png' %}" width="10%" /> <a> + </a>
+                    <img src="{% static 'img/slack_icon.png' %}" width="10%" /> <a> + </a>
+                    <img src="{% static 'img/telegram_icon.png' %}" width="10%" /> <a> + </a>
+                    <img src="{% static 'img/Messenger_icon.png' %}" width="10%" />
+                </div>
+                <div>
+                    <button onclick="home();" class="btn btn-success bnt-block">Voltar para home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function home() {
+                window.location.href = '/';
+            }
+</script>
+<!--- Footer -->
+<footer class="container-fluid text-center">
+    <div class="socialicon" class="col">
+        <a href="https://www.facebook.com" ><img class="fab fa-facebook"></a>
+        <a href="https://www.twitter.com" ><img class="fab fa-twitter"></a>
+        <a href="https://www.googleplus.com" ><img class="fab fa-google"></a>
+        <a href="https://www.instagram.com" ><img class="fab fa-instagram"></a>
+        <a href="https://github.com" ><img class="fab fa-github"></a>
+    </div>
+    <p>&copy Copyright 2018 by text - All Rights Reserved  :p </p>
+</footer>
+</body>
+</html>
